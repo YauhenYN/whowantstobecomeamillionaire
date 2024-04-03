@@ -51,7 +51,7 @@ export default function Play() {
         <>
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="absolute left-0 top-0 w-full h-full ">
-                    <Image src="/galaxy.jpg" alt="Galaxy" fill className="object-center object-cover"></Image>
+                    <Image src="/whowantstobecomeamillionaire/galaxy.jpg" alt="Galaxy" fill className="object-center object-cover"></Image>
                 </div>
                 <div className="z-[1] flex flex-col items-center p-[50px]">
                     {!game.causeOfGameEnd ?
