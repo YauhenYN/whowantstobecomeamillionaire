@@ -9,7 +9,6 @@ import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 
 const maxQuestionsCount = 15;
-
 export default function Play() {
     const [game, setGame] = useState<Game>((() => {
         let sortedQuestions = [...questions.sort(a => a.complexity)];
@@ -48,7 +47,6 @@ export default function Play() {
         }
         setGame(newGame);
     }
-    console.log(game);
     return (
         <>
             <div className="flex flex-col items-center justify-center w-full">
