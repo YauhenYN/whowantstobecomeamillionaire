@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  console.log("fdsfds");
   return (
       <div className="bg-blue-200 rounded-md overflow-hidden relative h-[750px] w-[400px] flex flex-col items-center justify-center">
         <div className="absolute left-0 top-0 w-full h-full ">
