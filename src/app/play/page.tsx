@@ -49,22 +49,22 @@ export default function Play() {
     }
     return (
         <>
-            <div className="flex flex-col items-center justify-center w-full">
+            <div className="bg-blue-200 rounded-md overflow-hidden relative h-[750px] w-[400px] flex flex-col items-center justify-center">
                 <div className="absolute left-0 top-0 w-full h-full ">
                     <Image src="/galaxy.jpg" alt="Galaxy" fill className="object-center object-cover"></Image>
                 </div>
-                <div className="z-[1] flex flex-col items-center p-[50px]">
+                <div className="z-[1] flex flex-col items-center py-[50px] px-[20px]">
                     {!game.causeOfGameEnd ?
                         <>
                             {isClient &&
                                 <>
                                     <h1 className="text-[22px] font-bold tracking-[3px]">Вопрос {currentQuestionInd + 1}</h1>
                                     <div className="text-[18px] font-semibold text-center mt-[20px]">{currentQuestion.question}</div>
-                                    <div className="grid grid-cols-2 gap-x-[20px] gap-y-[12px] mt-[20px]">
-                                        <div onClick={() => checkResult(0)} className="cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[0]}</div>
-                                        <div onClick={() => checkResult(1)} className="cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[1]}</div>
-                                        <div onClick={() => checkResult(2)} className="cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[2]}</div>
-                                        <div onClick={() => checkResult(3)} className="cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[3]}</div>
+                                    <div className="grid grid-cols-2 gap-x-[12px] gap-y-[12px] mt-[20px]">
+                                        <div onClick={() => checkResult(0)} className="break-words text-center cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[0]}</div>
+                                        <div onClick={() => checkResult(1)} className="break-words text-center cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[1]}</div>
+                                        <div onClick={() => checkResult(2)} className="break-words text-center cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[2]}</div>
+                                        <div onClick={() => checkResult(3)} className="break-words text-center cursor-pointer bg-blue-950 hover:bg-blue-900 px-[18px] py-[10px] rounded-md uppercase text-[14px] font-bold flex justify-center items-center">{currentQuestion.options[3]}</div>
                                     </div>
                                 </>
                             }

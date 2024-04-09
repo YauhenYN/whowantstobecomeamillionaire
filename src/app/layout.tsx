@@ -20,12 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <main className="min-h-screen bg-blue-900 text-white h-[100svh] grid grid-cols-3">
+          <main className="min-h-screen bg-blue-900 text-white lg:h-[100svh] grid grid-cols-1 lg:grid-cols-3 bg-blue-900">
             <div>
 
             </div>
-            <div className="flex justify-center items-center w-[400px]">
-              <div className="relative h-[750px] bg-blue-200 w-full rounded-md overflow-hidden">
+            <div className="flex justify-center items-center w-full lg:w-[400px] mb-[50px] lg:mb-[0px]">
+              <div className="relative h-[750px] w-full rounded-md overflow-hidden flex justify-center">
                 {children}
               </div>
             </div>
