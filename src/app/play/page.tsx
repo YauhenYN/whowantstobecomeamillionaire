@@ -51,7 +51,7 @@ export default function Play() {
         <>
             <div className="bg-blue-200 rounded-md overflow-hidden relative h-[750px] w-[400px] flex flex-col items-center justify-center">
                 <div className="absolute left-0 top-0 w-full h-full ">
-                    <Image src="/whowantstobecomeamillionaire/whowantstobecomeamillionaire/galaxy.jpg" alt="Galaxy" fill className="object-center object-cover"></Image>
+                    <Image src="/whowantstobecomeamillionaire/galaxy.jpg" alt="Galaxy" fill className="object-center object-cover"></Image>
                 </div>
                 <div className="z-[1] flex flex-col items-center py-[50px] px-[20px]">
                     {!game.causeOfGameEnd ?
